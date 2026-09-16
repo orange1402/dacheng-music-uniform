@@ -1,18 +1,18 @@
 const embeddedImages={"reference":"assets/reference.avif","skirt":"assets/skirt.avif"};
 const groups=[
  {name:'男生',cls:'boy',items:[
-  {type:'上衣',x:20,name:'黑色長袖襯衫',detail:'素面、無裝飾',query:'男 黑色 素面\n長袖 襯衫'},
-  {type:'下身',x:168,name:'黑色西裝長褲',detail:'褲長至腳踝附近',query:'男 黑色 西裝褲'},
-  {type:'襪子',x:315,name:'黑色中長襪',detail:'穿鞋後不可露出腳踝<br>不可穿船型襪',query:'男 黑色 中筒襪'},
-  {type:'鞋子',x:461,name:'黑色皮鞋',detail:'素面、正式款<br>不可穿運動鞋',query:'男 黑色 皮鞋\n正式 皮鞋'}],
+  {type:'上衣',x:0,name:'黑色長袖襯衫',detail:'素面、無裝飾',query:'男 黑色 素面\n長袖 襯衫'},
+  {type:'下身',x:143,name:'黑色西裝長褲',detail:'褲長至腳踝附近',query:'男 黑色 西裝褲'},
+  {type:'襪子',x:286,name:'黑色中長襪',detail:'穿鞋後不可露出腳踝<br>不可穿船型襪',query:'男 黑色 中筒襪'},
+  {type:'鞋子',x:429,name:'黑色皮鞋',detail:'素面、正式款<br>不可穿運動鞋',query:'男 黑色 皮鞋\n正式 皮鞋'}],
   checks:['黑色長袖襯衫（素面、無裝飾）','黑色西裝長褲（長度至腳踝附近）','黑色中長襪（不可露出腳踝、不可穿船型襪）','黑色皮鞋（素面、正式款、不可穿運動鞋）']},
  {name:'女生',cls:'girl',items:[
-  {type:'上衣',x:622,name:'黑色短袖襯衫',detail:'素面、無裝飾',query:'女 黑色 素面\n短袖 襯衫'},
-  {type:'下身',x:768,name:'黑色長褲',detail:'褲長及腳踝<br><span class="choice">長褲、長裙擇一</span>',query:'女 黑色 長褲',variants:[
+  {type:'上衣',x:572,name:'黑色短袖襯衫',detail:'素面、無裝飾',query:'女 黑色 素面\n短袖 襯衫'},
+  {type:'下身',x:715,name:'黑色長褲',detail:'褲長及腳踝<br><span class="choice">長褲、長裙擇一</span>',query:'女 黑色 長褲',variants:[
    {name:'黑色長褲',detail:'褲長及腳踝<br><span class="choice">長褲、長裙擇一</span>',query:'女 黑色 長褲',src:embeddedImages.reference,alt:'黑色長褲款式示意',skirt:false},
    {name:'黑色素面長裙',detail:'長度接近腳踝<br><span class="choice">長褲、長裙擇一</span>',query:'女 黑色 素面 長裙',src:embeddedImages.skirt,alt:'黑色素面長裙款式示意',skirt:true}]},
-  {type:'襪子',x:915,name:'黑色長筒襪',detail:'（到小腿肚）<br>或黑色褲襪',query:'女 黑色 長筒襪\n或 黑色 褲襪'},
-  {type:'鞋子',x:1061,name:'黑皮鞋／黑包鞋',detail:'素面、低調款<br>不可穿運動鞋',query:'女 黑色 皮鞋\n黑色 包鞋'}],
+  {type:'襪子',x:858,name:'黑色長筒襪',detail:'（到小腿肚）<br>或黑色褲襪',query:'女 黑色 長筒襪\n或 黑色 褲襪'},
+  {type:'鞋子',x:1001,name:'黑皮鞋／黑包鞋',detail:'素面、低調款<br>不可穿運動鞋',query:'女 黑色 皮鞋\n黑色 包鞋'}],
   checks:['黑色短袖襯衫（素面、無裝飾）','黑色長褲（褲長及腳踝）或黑色長裙（長度接近腳踝），擇一','黑色長筒襪（到小腿肚）或黑色褲襪','黑皮鞋／黑包鞋（素面、低調款、不可穿運動鞋）']}
 ];
 const displayGroups=[groups.find(group=>group.cls==='girl'),groups.find(group=>group.cls==='boy')];
