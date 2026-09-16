@@ -12,19 +12,19 @@ button, input { font: inherit; }
 a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #aa7116; outline-offset: 3px; }
 .art { display: inline-block; background-image: url("assets/art.avif"); background-repeat: no-repeat; flex-shrink: 0; pointer-events: none; vertical-align: middle; }
 .art--ink { filter: brightness(1.25); mix-blend-mode: multiply; }
-.art--clef{aspect-ratio:61/131;background-size:1729.508197% 1138.167939%;background-position:6.539235% 0.220588%}
-.art--dress{aspect-ratio:55/70;background-size:1918.181818% 2130.000000%;background-position:56.300000% 14.848698%}
-.art--suit{aspect-ratio:74/70;background-size:1425.675676% 2130.000000%;background-position:4.077472% 14.778325%}
-.art--search-boy{aspect-ratio:38/38;background-size:2776.315789% 3923.684211%;background-position:2.458210% 46.868548%}
-.art--search-girl{aspect-ratio:38/38;background-size:2776.315789% 3923.684211%;background-position:53.883972% 46.868548%}
-.art--clipboard-boy{aspect-ratio:37/45;background-size:2851.351351% 3313.333333%;background-position:2.946955% 65.767635%}
-.art--clipboard-girl{aspect-ratio:39/45;background-size:2705.128205% 3313.333333%;background-position:54.035433% 65.767635%}
-.art--megaphone{aspect-ratio:57/61;background-size:1850.877193% 2444.262295%;background-position:3.507014% 84.405594%}
-.art--leaf-left{aspect-ratio:68/91;background-size:1551.470588% 1638.461538%;background-position:2.228977% 91.428571%}
-.art--leaf-right{aspect-ratio:68/85;background-size:1551.470588% 1754.117647%;background-position:97.467072% 85.206259%}
-.art--staff{aspect-ratio:113/65;background-size:933.628319% 2293.846154%;background-position:100.000000% 0.000000%}
-.art--music-script{aspect-ratio:123/54;background-size:857.723577% 2761.111111%;background-position:98.068670% 6.054280%}
-.art--closing-script{aspect-ratio:221/89;background-size:477.375566% 1675.280899%;background-position:96.402878% 89.015692%}
+.art--clef{aspect-ratio:61/131;background-size:819.672131% 194.656489%;background-position:0.911162% 3.225806%}
+.art--dress{aspect-ratio:55/70;background-size:909.090909% 364.285714%;background-position:98.426966% 2.162162%}
+.art--suit{aspect-ratio:74/70;background-size:675.675676% 364.285714%;background-position:0.938967% 75.135135%}
+.art--search-boy{aspect-ratio:38/38;background-size:1315.789474% 671.052632%;background-position:0.865801% 98.156682%}
+.art--search-girl{aspect-ratio:38/38;background-size:1315.789474% 671.052632%;background-position:9.956710% 98.156682%}
+.art--clipboard-boy{aspect-ratio:37/45;background-size:1351.351351% 566.666667%;background-position:83.585313% 66.190476%}
+.art--clipboard-girl{aspect-ratio:39/45;background-size:1282.051282% 566.666667%;background-position:92.841649% 66.190476%}
+.art--megaphone{aspect-ratio:57/61;background-size:877.192982% 418.032787%;background-position:44.920993% 71.649485%}
+.art--leaf-left{aspect-ratio:68/91;background-size:735.294118% 280.219780%;background-position:15.972222% 2.439024%}
+.art--leaf-right{aspect-ratio:68/85;background-size:735.294118% 300.000000%;background-position:84.722222% 2.352941%}
+.art--staff{aspect-ratio:113/65;background-size:442.477876% 392.307692%;background-position:21.188630% 73.157895%}
+.art--music-script{aspect-ratio:123/54;background-size:406.504065% 472.222222%;background-position:68.965517% 69.154229%}
+.art--closing-script{aspect-ratio:221/89;background-size:226.244344% 286.516854%;background-position:50.537634% 2.409639%}
 
 /* Retain the supplied illustration details without rasterizing page text. */
 .hero {
@@ -69,7 +69,7 @@ main::after { content: ""; position: absolute; left: 50%; top: 22px; bottom: 18p
 .card h3 { margin: 0; padding: 6px 3px; color: var(--navy-deep); font-family: var(--sans); font-weight: 800; font-size: 1.35rem; letter-spacing: .06em; line-height: 1.5; background: linear-gradient(105deg,var(--pale),#f9fafb); }
 .girl .card h3 { background: linear-gradient(105deg,#f9e8ee,#fdf6f8); }
 .photo { aspect-ratio: 143/247; flex-shrink: 0; position: relative; overflow: hidden; background: #f8f8f8; }
-.photo img { position: absolute; width: 854.55%; max-width: none; height: auto; left: calc(var(--x) * -100% / 143); top: calc(-305 * 100% / 247); }
+.photo img { position: absolute; width: 800%; max-width: none; height: 100%; left: calc(var(--x) * -100% / 143); top: 0; }
 .photo img.skirt-photo { width: 100%; height: 100%; max-width: 100%; object-fit: contain; left: 0; top: 0; background: #fff; }
 .photo-status { position: absolute; z-index: 3; top: 8px; left: 8px; right: 8px; padding: 7px; border-radius: 6px; color: var(--ink); background: #fffffff5; font-size: .875rem; line-height: 1.5; box-shadow: 0 2px 8px #0002; }
 .sock-or { position: absolute; left: 46.853%; top: 51.417%; transform: translate(-50%,-50%); display: grid; place-items: center; width: 24%; min-width: 2.1rem; aspect-ratio: 1; border: 2px solid #9d4b60; border-radius: 50%; background: #fff; color: #75152e; font-size: 1.1rem; font-weight: 800; line-height: 1; box-shadow: 0 0 0 2px #fff,0 2px 5px #0002; }
